@@ -2,7 +2,7 @@ from sense_hat import SenseHat
 sense = SenseHat()
 sense.set_pixel(0, 2, [0, 0, 255])
 sense.set_pixel(7, 4, [255, 0, 0])
-sense.set_pixels([[255, 0, 0], [255, 0, 0], [255, 0, 0],...])
+
 r = [255, 0, 0]
 o = [255, 127, 0]
 y = [255, 255, 0]
@@ -19,6 +19,5 @@ image = [ e,e,e,e,e,e,e,e,
           y,g,g,b,b,g,g,y,
           b,b,b,i,i,b,b,b,
           b,i,i,v,v,i,i,b ]
-from sense_hat import SenseHat
-sense = SenseHat()
+sense.set_pixels(image)
 sense.set_rotation(180)
