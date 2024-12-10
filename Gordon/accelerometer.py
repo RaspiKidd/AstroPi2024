@@ -5,4 +5,4 @@ while True:
         x=round(x, 0)
         y=round(y, 0)
         z=round(z, 0)
-        print("x=%s, y=%s, z=%s" % (x,y,z))
+        print("x=%s, y=%s, z=%s" % (x, y, z))
