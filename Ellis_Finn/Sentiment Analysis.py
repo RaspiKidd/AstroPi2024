@@ -11,7 +11,7 @@ def setimentAnylsis(sentance):
     
     if polarity > 0:
         return "positive :)"
-    if polarity == 0:
+    elif polarity == 0:
         return "neutral :|"
     else:
         return "negative:("
