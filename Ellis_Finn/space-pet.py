@@ -46,7 +46,7 @@ def walking():
         time.sleep(0.5)
         
 walking()
-x, y, z = sense.get_accelerometer_raw.values()
+    x, y, z = sense.get_accelerometer_raw.values()
 
 while x<2 and y<2 and z<2:
     x, y, z = sense.get_accelerometer_raw.values()
