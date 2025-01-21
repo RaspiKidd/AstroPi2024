@@ -27,6 +27,10 @@ pet2 = [
     e, e, g, e, g, e, e, e,
     e, e, e, e, e, e, e, e,
     ]
-sense.set_pixels(pet1)
-time.sleep(0.5)
-sense.set_pixels(pet2)
+def walking():
+    for i in range(10):
+        sense.set_pixels(pet1)
+        time.sleep(0.5)
+        sense.set_pixels(pet2)
+        time.sleep(0.5)
+walking()
