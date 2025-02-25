@@ -1,7 +1,7 @@
 from sense_hat import SenseHat
 from time import sleep
 sense = SenseHat()
-sense.set_rotation(270)
+sense.set_rotation(0)
 sense.colour.gain = 60
 sense.colour.integration_cycles = 64
 
