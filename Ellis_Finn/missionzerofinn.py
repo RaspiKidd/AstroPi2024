@@ -23,10 +23,9 @@ z = (255, 153, 194)
 for i in range(28):
     rgb = sense.color
     c = (rgb.red, rgb.green, rgb.blue)
-    sleep(1)
 
 
-image1 = [
+    image1 = [
     b,b,b,f,f,f,f,o,
     b,b,f,f,bl,f,f,b,
     b,b,b,b,y,f,f,o,
@@ -37,7 +36,7 @@ image1 = [
     g,g,g,o,o,o,g,g]
     
 
-image2 = [
+    image2 = [
     b,z,b,b,b,b,z,b,
     z,b,b,b,b,b,b,z,
     z,l,l,l,l,l,l,z,
@@ -47,6 +46,7 @@ image2 = [
     b,d,d,d,d,d,d,b,
     b,d,b,b,b,b,d,b]
     
-sense.set_pixels(image1)
-sleep (3)
-sense.set_pixels(image2)
+    sense.set_pixels(image1)
+    sleep (3)
+    sense.set_pixels(image2)
+    sleep (3)

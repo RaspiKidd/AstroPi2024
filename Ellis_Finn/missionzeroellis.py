@@ -18,10 +18,9 @@ e = (255, 0, 0)
 for i in range(28):
     rgb = sense.color
     c = (rgb.red, rgb.green, rgb.blue)
-    sleep(1)
 
 
-image1 = [
+    image1 = [
     b, g, g, g, g, b, b, b,
     g, l, g, l, g, b, b, b,
     g, g, g, g, g, b, b, b,
@@ -32,7 +31,7 @@ image1 = [
     r, r, g, r, g, r, r, r]
     
 
-image2 = [
+    image2 = [
     b, g, g, g, g, b, b, b,
     g, e, g, e, g, b, b, b,
     g, g, g, g, g, b, b, b,
@@ -42,7 +41,7 @@ image2 = [
     b, b, a, a, g, g, b, b,
     r, r, g, r, g, r, r, r]
 
-while True:
+    
     sense.set_pixels(image1)
     sleep(1)
     sense.set_pixels(image2)
