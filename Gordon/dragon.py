@@ -16,8 +16,10 @@ b = (0, 163, 204) # Diagram
 g = (0, 0, 0) # Black
 p = (255, 77, 136) # CornflowerBlue
 e = (255, 255, 255)
+gr = (34, 139, 34)
+o = (178, 34, 34)
 
-image = [
+image1 = [
     e,e,e,e,e,e,e,e,
     e,e,b,b,b,b,e,e,
     b,b,e,b,b,e,b,b,
@@ -27,5 +29,19 @@ image = [
     b,b,b,b,b,b,b,b,
     e,b,b,b,b,b,b,e]
 
-# Display the image
-sense.set_pixels(image)
+image2 = [
+    b,b,b,b,b,b,b,b,
+    b,b,o,b,b,b,b,b,
+    b,b,o,o,o,o,o,b,
+    b,gr,o,o,o,o,o,o,
+    b,gr,o,o,o,o,o,o,
+    b,b,o,o,o,o,o,b,
+    b,b,o,b,b,b,b,b,
+    b,b,b,b,b,b,b,b]
+
+while True:
+    # Display the image
+    sense.set_pixels(image1)
+    sleep(1)
+    sense.set_pixels(image2)
+    sleep(1)
