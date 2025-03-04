@@ -19,6 +19,10 @@ e = (255, 255, 255)
 gr = (34, 139, 34)
 o = (178, 34, 34)
 
+for i in range(28):
+    rgb = sense.color # get the colour from the sensor
+    c = (rgb.red, rgb.green, rgb.blue)
+
 image1 = [
     e,e,e,e,e,e,e,e,
     e,e,b,b,b,b,e,e,
