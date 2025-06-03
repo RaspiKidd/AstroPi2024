@@ -1,1 +1,5 @@
-MyLunch = input("
+myName = input("what's your name")
+myAge = input("How old are you?:")
+print("Gee, thats really old!")
+replit = input("do you like Replit?:")
+print("of course u do!")
